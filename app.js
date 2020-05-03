@@ -438,22 +438,7 @@ app.get("/brands/mercedes/:id", function(req, res){
     });
 }); 
 //NEW BLOG
-app.get("/new", function(req, res){
-    res.render("new");
-})
 
-app.post("/brands/maruticars", function(req, res){
-    
-
-    mercedes.create(req.body.blog, function(err, newblog){
-        if(err){
-            res.render("new");
-        }
-        else{
-            res.redirect("/brands/mercedes");
-        }
-    })
-});
 
 
 app.listen(3000, ()=>{
