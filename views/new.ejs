@@ -1,0 +1,58 @@
+<%- include("partials/header.ejs") %>
+<div class="ui main text container segment">
+    <div class="ui huge header">New Blog</div>
+    <form class="ui form" action="/brands/maruticars" method="POST">
+        <div class="field">
+            <label>Title</label>
+            <input type="text" name="blog[title]" placeholder="Title Goes Here">
+        </div>
+        <div class="field">
+            <label>Image1</label>
+            <input type="text" name="blog[image1]" placeholder="Image URL Goes Here">
+        </div>
+        <div class="field">
+            <label>Image2</label>
+            <input type="text" name="blog[image2]" placeholder="Image URL Goes Here">
+        </div><div class="field">
+            <label>Image3</label>
+            <input type="text" name="blog[image3]" placeholder="Image URL Goes Here">
+        </div><div class="field">
+            <label>Image4</label>
+            <input type="text" name="blog[image4]" placeholder="Image URL Goes Here">
+        </div><div class="field">
+            <label>Image5</label>
+            <input type="text" name="blog[image5]" placeholder="Image URL Goes Here">
+        </div><div class="field">
+            <label>Image6</label>
+            <input type="text" name="blog[image6]" placeholder="Image URL Goes Here">
+        </div>
+        <div class="field">
+            <label>Price</label>
+            <input type="text" name="blog[price]" placeholder="Price Goes here">
+        </div>
+        <div class="field">
+            <label>Engine</label>
+            <input type="text" name="blog[engine]" placeholder="Price Goes here">
+        </div>
+        <div class="field">
+            <label>torque</label>
+            <input type="text" name="blog[torque]" placeholder="Price Goes here">
+        </div>
+        <div class="field">
+            <label>power</label>
+            <input type="text" name="blog[power]" placeholder="Price Goes here">
+        </div>
+        <div class="field">
+            <label>mileage</label>
+            <input type="text" name="blog[mileage]" placeholder="Price Goes here">
+        </div>
+        <div class="field">
+            <label>Transmission</label>
+            <input type="text" name="blog[trans]" placeholder="Price Goes here">
+        </div>
+        <button  class="ui huge inverted green button">Submit</button>    
+    
+    </form>
+</div>
+</div>
+<%- include("partials/footer.ejs") %>
