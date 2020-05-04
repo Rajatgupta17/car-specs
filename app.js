@@ -5,7 +5,7 @@ var expressSanitizer=require("express-sanitizer");
 var mongoose=require("mongoose");
 var bodyParser=require("body-parser");
 // mongodb://localhost/restful_blogapp
-mongoose.connect("mongodb+srv://rajat456bansal:Rajat@1705@cluster0-w5iyn.mongodb.net/restful_blogapp", {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect("mongodb+srv://rajat456bansal:<password>@cluster0-w5iyn.mongodb.net/restful_blogapp?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true});
 // mongodb://localhost/restful_blogapp
 app.set("view engine", "ejs");
 app.use(express.static("public"));
