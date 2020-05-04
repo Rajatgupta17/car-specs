@@ -1,6 +1,7 @@
 var express=require("express");
 var path=require("path");
 var app=express();
+const PORT= process.env.PORT || 3000;
 var expressSanitizer=require("express-sanitizer");
 var mongoose=require("mongoose");
 var bodyParser=require("body-parser");
@@ -441,6 +442,6 @@ app.get("/brands/mercedes/:id", function(req, res){
 
 
 
-app.listen(3000, ()=>{
+app.listen(PORT, ()=>{
     console.log("Server Started");
 })
